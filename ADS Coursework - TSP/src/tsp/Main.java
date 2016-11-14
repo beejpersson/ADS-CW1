@@ -67,6 +67,27 @@ public class Main {
 		return result;
 	}
 	
+	public static ArrayList<Point2D> nearestNeighbourEnhanced(ArrayList<Point2D> cities){
+		ArrayList<Point2D> result = new ArrayList<Point2D>();
+		ArrayList<ArrayList<Point2D>> sortedCitiesList = new ArrayList<ArrayList<Point2D>>();
+		ArrayList<Double> lengths = new ArrayList<Double>();
+		double distance = Double.POSITIVE_INFINITY;
+		for (int i = 0; i < (cities.size()/1000); i++){
+			ArrayList<Point2D> tempCitiesList = new ArrayList<Point2D>(cities);
+			sortedCitiesList.add(nearestNeighbourRandomStart(tempCitiesList));
+			lengths.add(routeLength(sortedCitiesList.get(i)));
+			System.out.println("Length of route: " + lengths.get(i));
+		}
+		for (double length : lengths){
+			if (length < distance){
+				distance = length;
+			}
+		}
+		result = sortedCitiesList.get((lengths.indexOf(distance)));
+		System.out.println(distance);
+		return result;
+	}
+	
 	public static void main(String[] args) {
 		
 		ArrayList<Point2D> cities = LibLoader.loadTSPLib("rl5915.tsp");
@@ -75,14 +96,13 @@ public class Main {
 		final long startTime = System.currentTimeMillis();
 		
 		//ArrayList<Point2D> sortedCities = nearestNeighbourBasic(cities);
-		ArrayList<Point2D> sortedCities = nearestNeighbourRandomStart(cities);
+		ArrayList<Point2D> sortedCities = nearestNeighbourEnhanced(cities);
 		
 		final long endTime = System.currentTimeMillis();
 		
 		double length = routeLength(sortedCities);
 		
 		System.out.println("Length: " + length + "\nTime: " + (endTime - startTime) + "ms");
-		System.out.println("hello");
 	}
 
 }
