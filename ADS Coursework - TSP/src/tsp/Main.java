@@ -82,6 +82,7 @@ public class Main {
 		double length = routeLength(sortedCities);
 		
 		System.out.println("Length: " + length + "\nTime: " + (endTime - startTime) + "ms");
+		System.out.println("hello");
 	}
 
 }
