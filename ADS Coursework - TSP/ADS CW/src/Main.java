@@ -1,4 +1,3 @@
-package tsp;
 
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
@@ -104,5 +103,4 @@ public class Main {
 		
 		System.out.println("Length: " + length + "\nTime: " + (endTime - startTime) + "ms");
 	}
-
 }
