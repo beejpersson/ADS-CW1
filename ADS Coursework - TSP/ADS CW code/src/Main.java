@@ -71,36 +71,53 @@ public class Main {
 		ArrayList<ArrayList<Point2D>> sortedCitiesList = new ArrayList<ArrayList<Point2D>>();
 		ArrayList<Double> lengths = new ArrayList<Double>();
 		double distance = Double.POSITIVE_INFINITY;
-		for (int i = 0; i < (cities.size()/1000); i++){
+		for (int i = 0; i < (cities.size()/10); i++){
 			ArrayList<Point2D> tempCitiesList = new ArrayList<Point2D>(cities);
 			sortedCitiesList.add(nearestNeighbourRandomStart(tempCitiesList));
 			lengths.add(routeLength(sortedCitiesList.get(i)));
-			System.out.println("Length of route: " + lengths.get(i));
-		}
-		for (double length : lengths){
-			if (length < distance){
-				distance = length;
+			//System.out.println("Length of route: " + lengths.get(i));
+			if (lengths.get(i) < distance){
+				distance = lengths.get(i);
+				result = sortedCitiesList.get(i);
 			}
 		}
-		result = sortedCitiesList.get((lengths.indexOf(distance)));
-		System.out.println(distance);
+		//System.out.println(distance);
 		return result;
 	}
 	
 	public static void main(String[] args) {
+		//Loads in desired city file
+		ArrayList<Point2D> cities = LibLoader.loadTSPLib("berlin52.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("eil101.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u159.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("gil262.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d493.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u1060.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d2103.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("fl3795.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("fnl4461.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("rl5915.tsp");
 		
-		ArrayList<Point2D> cities = LibLoader.loadTSPLib("rl5915.tsp");
-		System.out.println("Number of cities: " + cities.size());
+		//Print the number of cities for the file
+		System.out.println("Number of cities in file: " + cities.size());
 		
+		// Start recording times
 		final long startTime = System.currentTimeMillis();
 		
+		//Choose algorithm
 		//ArrayList<Point2D> sortedCities = nearestNeighbourBasic(cities);
 		ArrayList<Point2D> sortedCities = nearestNeighbourEnhanced(cities);
 		
-		final long endTime = System.currentTimeMillis();
+		//End recording time
+		final long endTime = System.currentTimeMillis();			
 		
+		//Measure length of route found
 		double length = routeLength(sortedCities);
 		
-		System.out.println("Length: " + length + "\nTime: " + (endTime - startTime) + "ms");
+		//Print results
+		System.out.println("Route Length: " + length + "\nRun Time: " + (endTime - startTime) + "ms");
+		
+		//Print the number of cities for the file after the algorithm is run
+		System.out.println("Number of cities in route: " + sortedCities.size());
 	}
 }
