@@ -1,4 +1,3 @@
-
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Random;
@@ -62,7 +61,6 @@ public class Main {
 			}
 			currentCity = closest;
 		}
-		
 		return result;
 	}
 	
@@ -87,15 +85,14 @@ public class Main {
 	
 	public static void main(String[] args) {
 		//Loads in desired city file
-		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("berlin52.tsp");
-		ArrayList<Point2D> cities = LibLoader.loadTSPLib("eil101.tsp");
+		ArrayList<Point2D> cities = LibLoader.loadTSPLib("berlin52.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("eil101.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u159.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("gil262.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d493.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u1060.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d2103.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("fl3795.tsp");
-		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("fnl4461.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("rl5915.tsp");
 		
 		//Print the number of cities for the file

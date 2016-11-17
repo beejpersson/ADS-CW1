@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.11.17)  17 NOV 2016 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.11.17)  17 NOV 2016 18:48
 entering extended mode
 **./report.tex
 (report.tex
@@ -386,42 +386,78 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box38
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
- (report.aux)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count128
+\lst@gtempboxa=\box39
+\lst@token=\toks24
+\lst@length=\count129
+\lst@currlwidth=\dimen149
+\lst@column=\count130
+\lst@pos=\count131
+\lst@lostspace=\dimen150
+\lst@width=\dimen151
+\lst@newlines=\count132
+\lst@lineno=\count133
+\lst@maxwidth=\dimen152
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count134
+\lst@skipnumbers=\count135
+\lst@framebox=\box40
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/06/02 v1.1d Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 56.
+
+(report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 46.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 69.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count128
-\scratchdimen=\dimen149
-\scratchbox=\box39
-\nofMPsegments=\count129
-\nofMParguments=\count130
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count131
-\MPscratchDim=\dimen150
-\MPnumerator=\count132
-\makeMPintoPDFobject=\count133
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count136
+\scratchdimen=\dimen153
+\scratchbox=\box41
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen154
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks26
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -438,18 +474,10 @@ G,.JBIG2,.JB2,.eps]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box40
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2016/06/02 v1.1d Standard LaTeX Color (DPC)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 46.
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring ON on input line 69.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -457,52 +485,54 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count134
+\c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 48.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
+\c@lstlisting=\count143
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 71.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 48.
+(Font)              scaled to size 13.24796pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 13.24796pt on input line 48.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 48.
+(Font)              scaled to size 13.24796pt on input line 71.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 71.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 52.
+(Font)              scaled to size 11.03998pt on input line 75.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 52.
+(Font)              scaled to size 11.03998pt on input line 75.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 63.
+(Font)              scaled to size 8.27998pt on input line 86.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.27998pt on input line 63.
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 85.
+(Font)              scaled to size 8.27998pt on input line 86.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 108.
+
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 85.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 108.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -511,13 +541,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 153.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 174.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -525,74 +555,121 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2] <images/efficiency_basic.pdf, id=46, 844.95674pt x 597.432pt>
+<images/efficacy_compared.pdf, id=39, 844.95674pt x 597.432pt>
+File: images/efficacy_compared.pdf Graphic file (type pdf)
+
+<use images/efficacy_compared.pdf>
+Package pdftex.def Info: images/efficacy_compared.pdf used on input line 235.
+(pdftex.def)             Requested size: 505.89pt x 357.69621pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2] <images/efficacy_compared_ratios.pdf, id=50, 844.95674pt x 597.432pt>
+File: images/efficacy_compared_ratios.pdf Graphic file (type pdf)
+
+<use images/efficacy_compared_ratios.pdf>
+Package pdftex.def Info: images/efficacy_compared_ratios.pdf used on input line
+ 245.
+(pdftex.def)             Requested size: 505.89pt x 357.69621pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/efficiency_basic.pdf, id=51, 844.95674pt x 597.432pt>
 File: images/efficiency_basic.pdf Graphic file (type pdf)
 
 <use images/efficiency_basic.pdf>
-Package pdftex.def Info: images/efficiency_basic.pdf used on input line 190.
+Package pdftex.def Info: images/efficiency_basic.pdf used on input line 251.
 (pdftex.def)             Requested size: 505.89pt x 357.69621pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/efficiency_enhanced.pdf, id=47, 844.95674pt x 597.432pt>
+<images/efficiency_enhanced.pdf, id=52, 844.95674pt x 597.432pt>
 File: images/efficiency_enhanced.pdf Graphic file (type pdf)
 
 <use images/efficiency_enhanced.pdf>
-Package pdftex.def Info: images/efficiency_enhanced.pdf used on input line 197.
+Package pdftex.def Info: images/efficiency_enhanced.pdf used on input line 258.
 
 (pdftex.def)             Requested size: 505.89pt x 357.69621pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./images/efficiency_basic.pdf> <./images/efficiency_enhanced.pdf
+<images/efficiency_compared.pdf, id=53, 844.95674pt x 597.432pt>
+File: images/efficiency_compared.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex.exe (file ./images/efficiency_enhanced.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
->]
+<use images/efficiency_compared.pdf>
+Package pdftex.def Info: images/efficiency_compared.pdf used on input line 264.
 
-LaTeX Warning: Reference `fig:teaser' on page 4 undefined on input line 216.
-
-(report.bbl (report.brf)
-\tf@brf=\write3
-\openout3 = `report.brf'.
+(pdftex.def)             Requested size: 505.89pt x 357.69621pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+[3
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
- [4
+ <./images/efficacy_compared.pdf>] [4 <./images/efficacy_compared_ratios.pdf>] 
+[5 <./images/efficiency_basic.pdf>] [6 <./images/efficiency_enhanced.pdf>]
+[7 <./images/efficiency_compared.pdf>]
+
+LaTeX Warning: Reference `fig:teaser' on page 8 undefined on input line 283.
+
+[8
 
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 292.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Overfull \hbox (74.05455pt too wide) in paragraph at lines 366--367
+[][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (6.8546pt too wide) in paragraph at lines 367--368
+[][][][][][][][][][][][][][][][][][][]  
+ []
+
+[9
+
+] [10
+
+]
+Overfull \hbox (15.30455pt too wide) in paragraph at lines 467--468
+[][][][][][][][][][][][][][][][][][]  
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
+[11
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
-Package rerunfilecheck Info: File `report.brf' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 487.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 487.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 487.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8456 strings out of 493335
- 129329 string characters out of 3136670
- 247794 words of memory out of 3000000
- 11841 multiletter control sequences out of 15000+200000
- 24314 words of font info for 51 fonts, out of 3000000 for 9000
+ 10045 strings out of 493335
+ 152818 string characters out of 3136670
+ 393526 words of memory out of 3000000
+ 13214 multiletter control sequences out of 15000+200000
+ 24829 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,15n,40p,1987b,2437s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,15n,40p,1985b,4408s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
 enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex
 9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.p
@@ -602,13 +679,14 @@ Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on report.pdf (4 pages, 334719 bytes).
+ (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on report.pdf (11 pages, 678698 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 422 PDF objects out of 1000 (max. 8388607)
+ 227 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
