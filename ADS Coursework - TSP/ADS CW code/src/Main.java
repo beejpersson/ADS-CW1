@@ -70,12 +70,12 @@ public class Main {
 		ArrayList<Point2D> result = new ArrayList<Point2D>();
 		ArrayList<ArrayList<Point2D>> sortedCitiesList = new ArrayList<ArrayList<Point2D>>();
 		ArrayList<Double> lengths = new ArrayList<Double>();
-		double distance = Double.POSITIVE_INFINITY;
 		for (int i = 0; i < (cities.size()/10); i++){
 			ArrayList<Point2D> tempCitiesList = new ArrayList<Point2D>(cities);
 			sortedCitiesList.add(nearestNeighbourRandomStart(tempCitiesList));
 			lengths.add(routeLength(sortedCitiesList.get(i)));
 			//System.out.println("Length of route: " + lengths.get(i));
+			double distance = Double.POSITIVE_INFINITY;
 			if (lengths.get(i) < distance){
 				distance = lengths.get(i);
 				result = sortedCitiesList.get(i);
@@ -87,8 +87,8 @@ public class Main {
 	
 	public static void main(String[] args) {
 		//Loads in desired city file
-		ArrayList<Point2D> cities = LibLoader.loadTSPLib("berlin52.tsp");
-		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("eil101.tsp");
+		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("berlin52.tsp");
+		ArrayList<Point2D> cities = LibLoader.loadTSPLib("eil101.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u159.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("gil262.tsp");
 		//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d493.tsp");
