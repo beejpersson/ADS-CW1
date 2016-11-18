@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.11.17)  18 NOV 2016 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.11.17)  18 NOV 2016 17:49
 entering extended mode
 **./report.tex
 (report.tex
@@ -729,7 +729,7 @@ Here is how much of TeX's memory you used:
  13334 multiletter control sequences out of 15000+200000
  26962 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,15n,40p,2177b,4476s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,15n,40p,2199b,4476s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
 enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:
@@ -742,7 +742,7 @@ iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on report.pdf (12 pages, 1158080 bytes).
+Output written on report.pdf (12 pages, 1158058 bytes).
 PDF statistics:
  517 PDF objects out of 1000 (max. 8388607)
  253 named destinations out of 1000 (max. 500000)
