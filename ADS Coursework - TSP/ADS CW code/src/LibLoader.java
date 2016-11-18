@@ -31,16 +31,14 @@ public class LibLoader {
 					//If reading in the node data
 					String[] tokens = currentLine.split(" ");
 					//Split the line by spaces.
-					//tokens[0] is the city id and not needed in this example
 					float x = Float.parseFloat(tokens[1].trim());
 					float y = Float.parseFloat(tokens[2].trim());
-					//Use Java's built in Point2D type to hold a city
 					Point2D city = new Point2D.Float(x,y);
 					//Add this city into the arraylist
 					result.add(city);
 				}
 				if (currentLine.contains("DIMENSION")){
-					//Note the expected problem dimension (number of cities)
+					//Check the problem dimension (number of cities)
 					String[] tokens = currentLine.split(":");
 					dimension = Integer.parseInt(tokens[1].trim());
 				}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.11.17)  17 NOV 2016 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.11.17)  18 NOV 2016 16:44
 entering extended mode
 **./report.tex
 (report.tex
@@ -288,6 +288,12 @@ File: hpdftex.def 2016/05/21 v6.83p Hyperref driver for pdfTeX
 Package hyperref Info: Option `colorlinks' set `true' on input line 505.
 Package hyperref Info: Option `breaklinks' set `true' on input line 505.
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count117
+\c@@ppsavesec=\count118
+\c@@ppsaveapp=\count119
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\dblfloatfix\dblfloatfix.sty"
 Package: dblfloatfix 2012/12/31 v1.0a (JAW)
 
@@ -300,11 +306,11 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                See the latexrelease package for details.
 
 )
-\@dblbotnum=\count117
-\c@dblbotnumber=\count118
+\@dblbotnum=\count120
+\c@dblbotnumber=\count121
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count119
+\c@AlgoLine=\count122
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -353,9 +359,9 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algoheightrule=\skip67
 \algotitleheightruledefault=\skip68
 \algotitleheightrule=\skip69
-\c@algocfline=\count120
-\c@algocfproc=\count121
-\c@algocf=\count122
+\c@algocfline=\count123
+\c@algocfproc=\count124
+\c@algocf=\count125
 \algocf@algoframe=\box35
 \algocf@algobox=\box36
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
@@ -370,40 +376,40 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen143
 \cmidrulekern=\dimen144
 \defaultaddspace=\dimen145
-\@cmidla=\count123
-\@cmidlb=\count124
+\@cmidla=\count126
+\@cmidlb=\count127
 \@aboverulesep=\dimen146
 \@belowrulesep=\dimen147
-\@thisruleclass=\count125
-\@lastruleclass=\count126
+\@thisruleclass=\count128
+\@lastruleclass=\count129
 \@thisrulewidth=\dimen148
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count127
+\c@float@type=\count130
 \float@exts=\toks22
 \float@box=\box37
 \@float@everytoks=\toks23
 \@floatcapt=\box38
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count128
+\lst@mode=\count131
 \lst@gtempboxa=\box39
 \lst@token=\toks24
-\lst@length=\count129
+\lst@length=\count132
 \lst@currlwidth=\dimen149
-\lst@column=\count130
-\lst@pos=\count131
+\lst@column=\count133
+\lst@pos=\count134
 \lst@lostspace=\dimen150
 \lst@width=\dimen151
-\lst@newlines=\count132
-\lst@lineno=\count133
+\lst@newlines=\count135
+\lst@lineno=\count136
 \lst@maxwidth=\dimen152
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count134
-\lst@skipnumbers=\count135
+\c@lstnumber=\count137
+\lst@skipnumbers=\count138
 \lst@framebox=\box40
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
@@ -422,41 +428,41 @@ Package color Info: Driver file: pdftex.def on input line 147.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 56.
+Package hyperref Info: Option `colorlinks' set `true' on input line 58.
 
 (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 71.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count136
+\scratchcounter=\count139
 \scratchdimen=\dimen153
 \scratchbox=\box41
-\nofMPsegments=\count137
-\nofMParguments=\count138
+\nofMPsegments=\count140
+\nofMParguments=\count141
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count139
+\MPscratchCnt=\count142
 \MPscratchDim=\dimen154
-\MPnumerator=\count140
-\makeMPintoPDFobject=\count141
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
 \everyMPtoPDFconversion=\toks26
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -477,7 +483,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring ON on input line 69.
+Package hyperref Info: Link coloring ON on input line 71.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -485,54 +491,54 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count142
+\c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
-\c@lstlisting=\count143
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 71.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
+\c@lstlisting=\count146
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 73.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 71.
+(Font)              scaled to size 13.24796pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 13.24796pt on input line 71.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 71.
+(Font)              scaled to size 13.24796pt on input line 73.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 73.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 75.
+(Font)              scaled to size 11.03998pt on input line 77.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 75.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 75.
+(Font)              scaled to size 11.03998pt on input line 77.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 86.
+(Font)              scaled to size 8.27998pt on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 86.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.27998pt on input line 86.
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 108.
+(Font)              scaled to size 8.27998pt on input line 88.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 112.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 108.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 112.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -541,13 +547,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 174.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 176.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -555,138 +561,190 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/efficacy_compared.pdf, id=39, 844.95674pt x 597.432pt>
+[2] <images/efficacy_compared_column.pdf, id=54, 844.95674pt x 597.432pt>
+File: images/efficacy_compared_column.pdf Graphic file (type pdf)
+
+<use images/efficacy_compared_column.pdf>
+Package pdftex.def Info: images/efficacy_compared_column.pdf used on input line
+ 241.
+(pdftex.def)             Requested size: 240.94499pt x 170.36104pt.
+
+<images/efficacy_compared_ratios_column.pdf, id=58, 844.95674pt x 597.432pt>
+File: images/efficacy_compared_ratios_column.pdf Graphic file (type pdf)
+
+<use images/efficacy_compared_ratios_column.pdf>
+Package pdftex.def Info: images/efficacy_compared_ratios_column.pdf used on inp
+ut line 249.
+(pdftex.def)             Requested size: 240.94499pt x 170.36104pt.
+
+<images/efficiency_basic_column.pdf, id=61, 844.95674pt x 597.432pt>
+File: images/efficiency_basic_column.pdf Graphic file (type pdf)
+
+<use images/efficiency_basic_column.pdf>
+Package pdftex.def Info: images/efficiency_basic_column.pdf used on input line 
+258.
+(pdftex.def)             Requested size: 240.94499pt x 170.36104pt.
+ [3 <./images/efficacy_compared_column.pdf> <./images/efficacy_compared_ratios_
+column.pdf
+
+pdfTeX warning: pdflatex.exe (file ./images/efficacy_compared_ratios_column.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/efficiency_basic_column.pdf
+
+pdfTeX warning: pdflatex.exe (file ./images/efficiency_basic_column.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>] <images/efficiency_enhanced_column.pdf, id=100, 844.95674pt x 597.432pt>
+File: images/efficiency_enhanced_column.pdf Graphic file (type pdf)
+
+<use images/efficiency_enhanced_column.pdf>
+Package pdftex.def Info: images/efficiency_enhanced_column.pdf used on input li
+ne 266.
+(pdftex.def)             Requested size: 240.94499pt x 170.36104pt.
+
+<images/efficiency_compared_column.pdf, id=103, 844.95674pt x 597.432pt>
+File: images/efficiency_compared_column.pdf Graphic file (type pdf)
+
+<use images/efficiency_compared_column.pdf>
+Package pdftex.def Info: images/efficiency_compared_column.pdf used on input li
+ne 274.
+(pdftex.def)             Requested size: 240.94499pt x 170.36104pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./images/efficiency_enhanced_column.pdf> <./images/efficiency_compared_colu
+mn.pdf
+
+pdfTeX warning: pdflatex.exe (file ./images/efficiency_compared_column.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 288.
+ <images/efficacy_compared.pdf, id=144, 844.95674pt x 597.432pt>
 File: images/efficacy_compared.pdf Graphic file (type pdf)
 
 <use images/efficacy_compared.pdf>
-Package pdftex.def Info: images/efficacy_compared.pdf used on input line 235.
+Package pdftex.def Info: images/efficacy_compared.pdf used on input line 291.
 (pdftex.def)             Requested size: 505.89pt x 357.69621pt.
 
+Overfull \hbox (264.945pt too wide) in paragraph at lines 291--292
+[] 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[5
 
-[2] <images/efficacy_compared_ratios.pdf, id=50, 844.95674pt x 597.432pt>
+
+ <./images/efficacy_compared.pdf>]
+<images/efficacy_compared_ratios.pdf, id=158, 844.95674pt x 597.432pt>
 File: images/efficacy_compared_ratios.pdf Graphic file (type pdf)
 
 <use images/efficacy_compared_ratios.pdf>
 Package pdftex.def Info: images/efficacy_compared_ratios.pdf used on input line
- 245.
+ 295.
 (pdftex.def)             Requested size: 505.89pt x 357.69621pt.
 
+Overfull \hbox (264.945pt too wide) in paragraph at lines 295--296
+[] 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[6
 
-<images/efficiency_basic.pdf, id=51, 844.95674pt x 597.432pt>
+
+ <./images/efficacy_compared_ratios.pdf>]
+<images/efficiency_basic.pdf, id=171, 844.95674pt x 597.432pt>
 File: images/efficiency_basic.pdf Graphic file (type pdf)
 
 <use images/efficiency_basic.pdf>
-Package pdftex.def Info: images/efficiency_basic.pdf used on input line 251.
+Package pdftex.def Info: images/efficiency_basic.pdf used on input line 299.
 (pdftex.def)             Requested size: 505.89pt x 357.69621pt.
 
+Overfull \hbox (264.945pt too wide) in paragraph at lines 299--300
+[] 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[7
 
-<images/efficiency_enhanced.pdf, id=52, 844.95674pt x 597.432pt>
+
+ <./images/efficiency_basic.pdf>]
+<images/efficiency_enhanced.pdf, id=185, 844.95674pt x 597.432pt>
 File: images/efficiency_enhanced.pdf Graphic file (type pdf)
 
 <use images/efficiency_enhanced.pdf>
-Package pdftex.def Info: images/efficiency_enhanced.pdf used on input line 258.
+Package pdftex.def Info: images/efficiency_enhanced.pdf used on input line 303.
 
 (pdftex.def)             Requested size: 505.89pt x 357.69621pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/efficiency_compared.pdf, id=53, 844.95674pt x 597.432pt>
-File: images/efficiency_compared.pdf Graphic file (type pdf)
-
-<use images/efficiency_compared.pdf>
-Package pdftex.def Info: images/efficiency_compared.pdf used on input line 264.
-
-(pdftex.def)             Requested size: 505.89pt x 357.69621pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3
-
- <./images/efficacy_compared.pdf>] [4 <./images/efficacy_compared_ratios.pdf>] 
-[5 <./images/efficiency_basic.pdf>] [6 <./images/efficiency_enhanced.pdf>]
-[7 <./images/efficiency_compared.pdf>]
-
-LaTeX Warning: Reference `fig:teaser' on page 8 undefined on input line 283.
+Overfull \hbox (264.945pt too wide) in paragraph at lines 303--304
+[] 
+ []
 
 [8
 
 
+ <./images/efficiency_enhanced.pdf>]
+<images/efficiency_compared.pdf, id=198, 844.95674pt x 597.432pt>
+File: images/efficiency_compared.pdf Graphic file (type pdf)
 
-]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 292.
+<use images/efficiency_compared.pdf>
+Package pdftex.def Info: images/efficiency_compared.pdf used on input line 307.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \hbox (74.05455pt too wide) in paragraph at lines 366--367
-[][][][][][][][][][][][][][]  
- []
+(pdftex.def)             Requested size: 505.89pt x 357.69621pt.
 
-
-Overfull \hbox (6.8546pt too wide) in paragraph at lines 367--368
-[][][][][][][][][][][][][][][][][][][]  
+Overfull \hbox (264.945pt too wide) in paragraph at lines 307--308
+[] 
  []
 
 [9
 
-] [10
+
+ <./images/efficiency_compared.pdf>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 313.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [10
+
+
+] [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 522.
+
+[12
 
 ]
-Overfull \hbox (15.30455pt too wide) in paragraph at lines 467--468
-[][][][][][][][][][][][][][][][][][]  
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
-[11
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 522.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 487.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 487.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 487.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 522.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 522.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 522.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10045 strings out of 493335
- 152818 string characters out of 3136670
- 393526 words of memory out of 3000000
- 13214 multiletter control sequences out of 15000+200000
- 24829 words of font info for 53 fonts, out of 3000000 for 9000
+ 10200 strings out of 493335
+ 155761 string characters out of 3136670
+ 371950 words of memory out of 3000000
+ 13334 multiletter control sequences out of 15000+200000
+ 26962 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,15n,40p,1985b,4408s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,15n,40p,2177b,4476s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
-enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex
-9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on report.pdf (11 pages, 678698 bytes).
+enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on report.pdf (12 pages, 1158080 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 227 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 253 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

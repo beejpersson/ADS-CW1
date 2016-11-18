@@ -6,7 +6,9 @@
 %%% author, citations, equations, etc.
 % % Citations/references are in report.bib 
 
+
 \documentclass[conference,backref=page]{acmsiggraph}
+\usepackage[toc,page]{appendix}
 \usepackage{dblfloatfix}
 \usepackage[]{algorithm2e}
 \usepackage{graphicx}
@@ -86,9 +88,11 @@ The Travelling Salesman Problem is a common algorithmic problem often discussed 
 Given a list of cities and their locations (and therefore the distances between each city), what is the shortest route from a starting city that travels to each city only once before returning to the starting city? Solving this problem is often not only about achieving the shortest possible route, there is a focus on optimisation: finding this shortest route in a reasonable time given the number of cities.
 
 \paragraph{First Solution: Nearest Neighbour Basic}
-The Nearest Neighbour algorithm used here solves the problem by starting with the first city in the file, checking the distances between it and all the other cities, picking the shortest distance then doing the same for that closest city with all the rest, whilst removing each previous city. The pseudo-code for this algorithm is shown in Algorithm \ref{nnbasic}. This algorithm tends to return fairly short routes (although rarely the shortest) whilst also being fairly efficient. When used on a larger number of cities, the run time will still be comparatively low. This is due to it having an order of complexity of $n^2$, or $O(n^2)$, where the run time will increase in proportion to the problem size squared (for example the theoretical run time on a set of 10 cities will be 4 times bigger than on a set of 5, as $(10/5)^2 = 4$).
+The Nearest Neighbour algorithm used here solves the problem by starting with the first city in the file, checking the distances between it and all the other cities, picking the shortest distance then doing the same for that closest city with all the rest, whilst removing each previous city (this can be seen in Algorithm \ref{nnbasic} and in code in Appendix \ref{maincode}). This algorithm tends to return fairly short routes (although rarely the shortest) whilst also being fairly efficient. When used on a larger number of cities, the run time will still be comparatively low. This is due to it having an order of complexity of $n^2$, or $O(n^2)$, where the run time will increase in proportion to the problem size squared (for example the theoretical run time on a set of 10 cities will be 4 times bigger than on a set of 5, as $(10/5)^2 = 4$).
 
 \begin{algorithm}[h]
+	\caption{Nearest Neighbour Basic Psuedo-code}
+	\label{nnbasic}
 	\KwData{Array List of unsorted cities}
 	\KwResult{Empty Array List (for sorted cities)}
 	Point2D closest = null\;
@@ -106,14 +110,14 @@ The Nearest Neighbour algorithm used here solves the problem by starting with th
 		currentCity = closest\;
 	}
 	return Result\;
-	\caption{Nearest Neighbour Basic}
-	\label{nnbasic}
 \end{algorithm}
 
 \paragraph{Second Solution: Nearest Neighbour Enhanced}
-The Nearest Neighbour Enhanced algorithm uses a fairly simple adaptation to the previous algorithm. Instead of starting with the first city in the file, it will start with a random city and find the closest city to it and carry on from there. After that it will calculate the length of that route. It will do these two steps a number of times (specifically a tenth of the number of cities in the file) and then look over the list of lengths and pick the lowest route length found. The pseudo-code for this algorithm is shown in Algorithm \ref{nnenhanced}. This algorithm should consistently find lower route lengths at the expense of increased run time. As it is running the previous algorithm $n/10$ times (where n is the number of cities), its order of complexity is $O(n^3)$. This means that as the problem size increases, the run time will increase significantly (for example, the theoretical run time on a set of 10 cities will be 8 times bigger than on a set of 5, as $(10/5)^3 = 8$).
+The Nearest Neighbour Enhanced algorithm uses a fairly simple adaptation to the previous algorithm. Instead of starting with the first city in the file, it will start with a random city and find the closest city to it and carry on from there. After that it will calculate the length of that route. It will do these two steps a number of times (specifically a tenth of the number of cities in the file) and then look over the list of lengths and pick the lowest route length found (this can be seen in Algorithm \ref{nnenhanced} and in code in Appendix \ref{maincode}). This algorithm should consistently find lower route lengths at the expense of increased run time. As it is running the previous algorithm $n/10$ times (where n is the number of cities), its order of complexity is $O(n^3)$. This means that as the problem size increases, the run time will increase significantly (for example, the theoretical run time on a set of 10 cities will be 8 times bigger than on a set of 5, as $(10/5)^3 = 8$).
 
 \begin{algorithm}[h]
+	\caption{Nearest Neighbour Enhanced Psuedo-code}
+	\label{nnenhanced}
 	\KwData{Array List of unsorted cities}
 	\KwResult{Empty Array List (for sorted cities)}
 	Array List of Array Lists sortedCitiesList\;
@@ -129,11 +133,9 @@ The Nearest Neighbour Enhanced algorithm uses a fairly simple adaptation to the 
 		}
 	}
 	return Result\;
-	\caption{Nearest Neighbour Enhanced}
-	\label{nnenhanced}
 \end{algorithm}
 
-\section{Experimental Method}
+\section{Experimental Methods}
 
 \paragraph{Overview}
 The algorithms were tested against each other and on a variety of problem instances, with differing numbers of cities in each problem instance. The time it took the algorithm to return a sorted list of cities from the original unsorted list was used as the Run Time. The Route Length results were determined by calculating the length of the route between all the cities in the order of the sorted cities list. Tests were repeated for each algorithm for every problem instance. The results used in the later graphics were the averages of these repeated tests.
@@ -149,8 +151,8 @@ The algorithms were tested against each other and on a variety of problem instan
 
 
 \section{Results}
-Shown in this section are the results of the testing.
 
+\paragraph{Tables}
 \begin{figure}[h]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{%
@@ -205,14 +207,14 @@ Figure \ref{exampletesttable} shows an example table of the testing. The problem
 
 The averages table has the problem instances' number of cities, $n$, on the left with the corresponding averages of the test results for each algorithm displayed in the neighbouring columns. The Run Times were recorded to one decimal place in milliseconds and the Route Length to the nearest two decimal places. This was to tidy the table up from the test tables.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{%
 			\begin{tabular}{@{}rcccc@{}}
 				\toprule
 				\multicolumn{1}{l}{} & \multicolumn{4}{c}{Ratios} \\ \midrule
 				\multicolumn{1}{l|}{} & \multicolumn{2}{c|}{Nearest Neighbour Basic} & \multicolumn{2}{c}{Nearest Neighbour Enhanced} \\ \midrule
-				\multicolumn{1}{c|}{n} & \multicolumn{1}{l|}{Time / ms} & \multicolumn{1}{l|}{Route Length / units} & \multicolumn{1}{l|}{Time / ms} & \multicolumn{1}{l}{Route Length / units} \\ \midrule
+				\multicolumn{1}{c|}{n} & \multicolumn{1}{c|}{Time} & \multicolumn{1}{c|}{Route Length} & \multicolumn{1}{c|}{Time} & \multicolumn{1}{c}{Route Length} \\ \midrule
 				\multicolumn{1}{r|}{52} & 1.0 & \multicolumn{1}{c|}{1.0} & 1.7 & 0.989 \\
 				\multicolumn{1}{r|}{101} & 1.0 & \multicolumn{1}{c|}{1.0} & 2.5 & 0.920 \\
 				\multicolumn{1}{r|}{159} & 1.0 & \multicolumn{1}{c|}{1.0} & 3.5 & 0.919 \\
@@ -229,260 +231,293 @@ The averages table has the problem instances' number of cities, $n$, on the left
 	\end{center}
 \end{figure}
 
-The ratios table has the problem instances' number of cities, $n$, on the left with the corresponding ratios for each algorithm displayed in the neighbouring columns. The Run Times and the Route Length results of both the Enhanced algorithm and the Basic algorithm were divided by the Basic algorithm's results to find the ratios shown.
-
-\begin{figure*}[h]
-	\includegraphics[width=\textwidth]{images/efficacy_compared.pdf}
-	\caption{A graph showing the Nearest Neighbour Basic algorithm's average Route Length results compared against the Nearest Neighbour Enhanced algorithm's for the differing number of cities in each problem instance.}
-	\label{efficacycomparedgraph}
-\end{figure*}
-
-\paragraph{Efficacy of Both Algorithms Compared}
-The graph shown above (\ref{efficacycomparedgraph}) displays the results found for the Route Length for the shortest route found for both the Nearest Neighbour Basic and Nearest Neighbour Enhanced algorithms against the separate problem instances.
-
-	
-\begin{figure*}[h]
-	\includegraphics[width=\textwidth]{images/efficacy_compared_ratios.pdf}
-	\caption{A graph showing the Nearest Neighbour Basic algorithm's average Route Length results compared against the Nearest Neighbour Enhanced algorithm's for the differing number of cities in each problem instance.}
-	\label{efficacycomparedratiosgraph}
-\end{figure*}
-
-\begin{figure*}[h]
-	\includegraphics[width=\textwidth]{images/efficiency_basic.pdf}
-	\caption{A graph showing the Nearest Neighbour Basic algorithm's average run time compared against the number of cities in each problem instance. The trendline is a polynomial trendline of order 2 aligning the algorithms order of complexity.}
-	\label{efficiencybasicgraph}
-\end{figure*}
+The ratios table has the problem instances' number of cities, $n$, on the left with the corresponding ratios for each algorithm displayed in the neighbouring columns. The Run Times and the Route Length results of both the algorithms were divided by the Basic algorithm's results to find the ratios shown.
 
 
-\begin{figure*}[h]
-	\includegraphics[width=\textwidth]{images/efficiency_enhanced.pdf}
-	\caption{A graph showing the Nearest Neighbour Enhanced algorithm's average run time compared against the number of cities in each problem instance. The trendline is a polynomial trendline of order 3 aligning the algorithms order of complexity.}
-	\label{efficiencyenhancedgraph}
-\end{figure*}
+\paragraph{Efficacy Graphs}
+The graph shown below (Figure \ref{efficacycomparedcolumngraph}) displays the results found for the Route Length for the shortest route found by both the Nearest Neighbour Basic and Nearest Neighbour Enhanced algorithms against the separate problem instances (a full size version is found in Appendix \ref{efficacycomparedgraph}). For every problem instance tested the Enhanced algorithm achieved a shorter Route Length than the basic algorithm. However this graph has some results as low as $759.5$ units (for $n = 101$) and as high as $707,498.6$ units (for $n = 5915$), therefore it's hard to display by how much the Enhanced algorithm improved upon the shortest route found by the Basic algorithm for some of the problem instances tested.
 
-\begin{figure*}[h]
-	\includegraphics[width=\textwidth]{images/efficiency_compared.pdf}
-	\caption{A graph showing the Nearest Neighbour Enhanced algorithm's average run time compared against the number of cities in each problem instance. The trendline is a polynomial trendline of order 3 aligning the algorithms order of complexity.}
-	\label{efficiencycomparedgraph}
-\end{figure*}
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{images/efficacy_compared_column.pdf}
+	\caption{A graph showing how the average Route Length results of both algorithms compared for the differing number of cities in each problem instance.}
+	\label{efficacycomparedcolumngraph}
+\end{figure}
 
-\clearpage
-\section{Guidelines}
-This section should be removed from your design report. Information provided here is to help you writing up your reports.
+ A similar graph (show below in Figure \ref{efficacycomparedratioscolumngraph} and in full in Appendix \ref{efficacycomparedratiosgraph}) that showed the Route Length found by the Enhanced algorithm as a ratio of what was found by the Basic algorithm was used to help better display this. Here it is clear that even for smaller data sets (where the Route Length tended to be fairly small also) the Enhanced algorithm was still consistently finding shorter routes. In fact, for the two problem instances that are almost invisible on Figure \ref{efficacycomparedcolumngraph} ($n = 101$ and $n = 262$), the Enhanced algorithm returned a proportionally shorter route than it did on the larger data sets when compared against the Basic algorithm.
 
-\begin{itemize}
-\item Equations should be numbered and in the correct format, e.g., Equation \ref{eq:myequation} below:
-\begin{equation} \label{eq:myequation}
- \sum_{j=1}^{z} j = \frac{z(z+1)}{2}
-\end{equation}
-\item Furthermore, if you include an equation, ensure you explain what each of the variables are (e.g., $F$ is force, $m$ is mass, and $a$ is the acceleration).
-\item Don't using 'I' or 'Me'.
-\item Each paragraph should be clear and focused, with multiple sentences that help make your point - avoid lots of single line paragraph sentence.
-\item Make sure the citations are done using the correct formatting (i.e., .bib file and let LaTeX generate the references).
-\item Every figure should have a caption, explaining what the picture is and what the reader should be looking at (i.e., what is important about the figure, what does it show)
-\item A figure should also be referenced in the body of the main text (e.g., see Figure \ref{fig:teaser})
-\item Equations should be numbered, and referenced in the text. Furthermore, ensure each of the variables in the equation are explained (i.e., don't use F=ma and not say what F, a, and m are)
-\end{itemize}
+\begin{figure}[H]
+	\includegraphics[width=\columnwidth]{images/efficacy_compared_ratios_column.pdf}
+	\caption{A graph showing the Enhanced algorithm's average Route Length results as a ratio of the Basic algorithm's results.}
+	\label{efficacycomparedratioscolumngraph}
+\end{figure}
+
+\paragraph{Efficiency Graphs}
+Whilst it's important for an algorithm that solves the Travelling Salesman Problem to return a short route, the time it takes for the algorithm to complete the task must be taken into account, especially when considering problem instances with very large numbers of cities. The graph shown below (Figure \ref{efficiencybasiccolumngraph}) displays the Run Time results of the Nearest Neighbour Basic algorithm against the Number of Cities, $n$, of the separate problem instances (a full size version is found in Appendix \ref{efficiencybasicgraph}). As mentioned earlier, the Basic algorithm has complexity $O(n^2)$, this is reinforced by the results displayed below. A polynomial trendline of order 2 has been generated for the data that shows this. The average Run Time results clearly increase proportional to the increase in the Number of Cities, $n$, squared. However, this algorithm is still returning solutions to the problem fairly fast. For seven of the nine problem instances tested the Basic algorithm solved the problem and returned a route in less than $50ms$. Whilst the other two problem instances take up to $350ms$, this is still very quick, especially when compared to the Enhanced algorithm's Run Time results, shown below.
+
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{images/efficiency_basic_column.pdf}
+	\caption{A graph showing the Nearest Neighbour Basic algorithm's average Run Time compared against the number of cities in each problem instance. The trendline is a polynomial trendline of order 2, aligning with the algorithm's order of complexity.}
+	\label{efficiencybasiccolumngraph}
+\end{figure}
+
+The Nearest Neighbour Enhanced algorithm consistently found shorter Route Lengths when solving the same problem instances as the Basic algorithm. However, the average Run Time results for each test very quickly got significantly higher than the Basic algorithm's Run Time results. Shown below (in Figure \ref{efficiencyenhancedcolumngraph}) is a graph that displays the efficiency of the Enhanced algorithm, putting it's Run Time against the Number of Cities, $n$, in the problem instances it was tested on (a full size graph can be found in Appendix \ref{efficiencyenhancedgraph}). The Enhanced algorithm has complexity $O(n^3)$ as it iterates through a tenth of the total number of cities performing the Nearest Neighbour Random Start algorithm (complexity $O(n^2)$) each time. This is shown by the polynomial trendline of order 3 generated from the data displayed on the graph. Because of this the average Run Time results are very high, especially for medium and larger data sets. Only for problem instances with less than around $500$ cities did the Enhanced algorithm run in less than $200ms$, and beyond this Run Times start increasing even further. For the two problem instances with the largest number of cities the Enhanced algorithm returns a shortest route in roughly $46$ and $180$ seconds respectively (specifically $45,949.0ms$ and $179,763.5ms$). Because of this, the two algorithms' Run Time results are poorly displayed on a graph with a linear scaled Run Time axis, as the results of the Enhanced algorithm dwarf the other results. Therefore a graph with a logarithmic scale is used to show the significant difference between the efficiency of both algorithms.
+
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{images/efficiency_enhanced_column.pdf}
+	\caption{A graph showing the Nearest Neighbour Enhanced algorithm's average Run Time compared against the number of cities in each problem instance. The trendline is a polynomial trendline of order 3, aligning with the algorithm's order of complexity.}
+	\label{efficiencyenhancedcolumngraph}
+\end{figure}
+
+The graph below (Figure \ref{efficiencycomparedcolumngraph}) shows the comparison between both the algorithms' Run Times on a logarithmic scale (a full sized graph can be found in Appendix \ref{efficiencycomparedgraph}). Once again for both the Enhanced and Basic algorithms there are generated polynomial trendlines of order 2 and 3 respectively shown in the graph that reinforce the separate algorithms' order of complexity, as discussed earlier. Using this graph it is clear that whilst the Enhanced algorithm regularly returns shorter final route lengths, the Basic algorithm finds the solution significantly faster. On smaller data sets (up to 500 cities) the difference in time is negligible (within one tenth of a second), but as the number of cities in the problem instance increases, the Run Time for the Enhanced algorithm becomes large enough to become a problem. The largest data set tested had 5915 cities, for this problem the Basic algorithm returned a Route Length in an average Run Time of $336.4ms$, whereas the Enhanced algorithm returned a Route Length in an average Run Time of $179.763.5ms$, or roughly 3 minutes. Given a data set of 10,000 or more cities, using the Enhanced algorithm to solve the problem becomes increasingly infeasible. 
+
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{images/efficiency_compared_column.pdf}
+	\caption{A graph showing the Nearest Neighbour Basic algorithm's average Run Time compared with the Nearest Neighbour Enhanced algorithm's average Run Time against the number of cities in each problem instance using a logarithmic scale. The trendlines are polynomial trendlines of order 2 and 3 respectively.}
+	\label{efficiencycomparedcolumngraph}
+\end{figure}
+
+\section{Conclusions}
+\paragraph{Results Explanations}
+The Nearest Neighbour Basic algorithm finds the shortest route that visits each city only once from a list of unsorted cities by finding the closest city to the first city in the list, then finding the closest city to that city and does this for all cities in the list (refer to Algorithm \ref{nnbasic} and Appendix \ref{maincode}). It has an order of complexity of $O(n^2)$, where $n$ is the number of cities in the unsorted list, as for each city in the list it looks at the distance between it and all other cities. Because of this the time it takes for the algorithm to return a solution will be proportional to the number of cities in the list squared. The Nearest Neighbour Enhanced algorithm, however, finds the shortest route by running an adapted version of the Basic algorithm, where it starts with a random city in the unsorted list as opposed to the first city, multiple (a tenth of $n$) times, and choosing the shortest route out of all the routes found (refer to Algorithm \ref{nnenhanced} and Appendix \ref{maincode}). Because of this the order of complexity is $n^2 \times n/10$ or $O(n^3)$. Due to having a wide range of routes, found by running the adapted Nearest Neighbour algorithm multiple times, to select the lowest Route Length from; the Enhanced algorithm reliably produces a final solution to the problem with a shorter Route Length than the Basic algorithm (as seen in Figures \ref{efficacycomparedcolumngraph} and \ref{efficacycomparedratioscolumngraph} (Appendix \ref{efficacycomparedgraph} and \ref{efficacycomparedratiosgraph} respectively)). However, as stated before, finding a shorter route comes at a cost. The effect of the increased complexity can clearly be seen in Figures \ref{efficiencybasiccolumngraph}, \ref{efficiencyenhancedcolumngraph} and \ref{efficiencycomparedcolumngraph} (Appendix \ref{efficiencybasicgraph}, \ref{efficiencyenhancedgraph} and \ref{efficiencycomparedgraph} respectively or full size graphs). The Run Time results for the Enhanced algorithm are longer than the Basic algorithm's for all data sets and significantly so when the number of cities becomes larger.
+\paragraph{Reflections on the Value of the Algorithms}
+There were many parameters put in place to ensure accuracy and repeatability of the tests, for example the Run Time was calculated looking only at the time it took for the algorithm to return a sorted list and there were multiple tests done for multiple problem instances, all done on the same PC. Given these parameters and that the results represented what was expected of the algorithms due to their respective orders of complexity, the results can be said to be reliable, therefore the values of the separate algorithms can be discussed. It is clear that the Nearest Neighbour Enhanced algorithm repeatedly found shorter routes for every problem instance tested, and that for smaller data sets it did this with a negligible increase in Run Time. However, for how much shorter the route found was compared to what the Basic algorithm found, the increase in the Run Time becomes increasingly hard to justify for larger data sets. Referring to the ratios table, Figure \ref{ratioresultstable}, it is clear that for problem instances with more than 500 cities the Run Time is hundreds of times larger, whilst the Route Length found is still only, at best, 0.95 times what the Basic algorithm found.
+\paragraph{Final Thoughts}
+The increase from an order of complexity of $O(n^2)$ to $O(n^3)$ will significantly increase the Run Time for large values of $n$. As such, given the negligible improvement in the length of the route found by the Enhanced algorithm, for any Travelling Salesman Problem instances the Enhanced algorithm should only be preferred for instances with a comparatively small numbers of cities, otherwise the Basic algorithm is superior.
 
 \clearpage
-\section{Appendix}
-
-\textbf{Main.java}
-
-\begin{lstlisting}
-
-	import java.awt.geom.Point2D;
-	import java.util.ArrayList;
-	import java.util.Random;
+\begin{appendices}
+	\section{Efficacy Compared}
+		\label{efficacycomparedgraph}
+		\includegraphics[width=\textwidth]{images/efficacy_compared.pdf}
+	\clearpage
+	\section{Efficacy Compared Using Ratios}
+		\label{efficacycomparedratiosgraph}
+		\includegraphics[width=\textwidth]{images/efficacy_compared_ratios.pdf}
+	\clearpage
+	\section{Efficiency of the Basic Algorithm}
+		\label{efficiencybasicgraph}
+		\includegraphics[width=\textwidth]{images/efficiency_basic.pdf}
+	\clearpage
+	\section{Efficiency of the Basic Algorithm}
+		\label{efficiencyenhancedgraph}
+		\includegraphics[width=\textwidth]{images/efficiency_enhanced.pdf}
+	\clearpage
+	\section{Efficiency of the Basic Algorithm}
+		\label{efficiencycomparedgraph}
+		\includegraphics[width=\textwidth]{images/efficiency_compared.pdf}
 	
-	public class Main {
+	\clearpage
+	\onecolumn
+	\section{Main.java}
+	\label{maincode}
+	\begin{lstlisting}
 	
-		public static double routeLength(ArrayList<Point2D> cities){
-			//Calculate the length of a TSP route held in an ArrayList as a set of Points
-			double result=0;//Holds the route length
-			Point2D prev = cities.get(cities.size()-1);
-			//Set the previous city to the last city in the ArrayList as we need to measure the length of the entire loop
-			for(Point2D city : cities){
-				//Go through each city in turn
-				result += city.distance(prev);
-				//get distance from the previous city
-				prev = city;
-				//current city will be the previous city next time
-			}
-			return result;
-		}
+		import java.awt.geom.Point2D;
+		import java.util.ArrayList;
+		import java.util.Random;
 		
-		public static double getDistance(Point2D currentCity, Point2D possible){
+		public class Main {
 		
-			return Point2D.distance(currentCity.getX(), currentCity.getY(), possible.getX(), possible.getY());
-		}
-		
-		public static ArrayList<Point2D> nearestNeighbourBasic(ArrayList<Point2D> cities){
-			ArrayList<Point2D> result = new ArrayList<Point2D>();
-			Point2D closest = null;
-			Point2D currentCity = cities.get(0);
-			while (cities.size() > 0){
-				result.add(currentCity);
-				cities.remove(currentCity);
-				double distance = Double.POSITIVE_INFINITY;
-				for (Point2D city : cities){
-					if (getDistance(currentCity, city) < distance){
-						closest = city;
-						distance = getDistance(currentCity, city);
-					}
+			public static double routeLength(ArrayList<Point2D> cities){
+				//Calculate the length of a TSP route held in an ArrayList as a set of Points
+				double result=0;//Holds the route length
+				Point2D prev = cities.get(cities.size()-1);
+				//Set the previous city to the last city in the ArrayList as we need to measure the length of the entire loop
+				for(Point2D city : cities){
+					//Go through each city in turn
+					result += city.distance(prev);
+					//Get distance from the previous city
+					prev = city;
+					//Current city will be the previous city next time
 				}
-				currentCity = closest;
+				return result;
 			}
-			return result;
-		}
-		
-		public static ArrayList<Point2D> nearestNeighbourRandomStart(ArrayList<Point2D> cities){
-			ArrayList<Point2D> result = new ArrayList<Point2D>();
-			Point2D closest = null;
-			Random rn = new Random();
-			int random = rn.nextInt(cities.size() + 1);
-			Point2D currentCity = cities.get(random);
-			while (cities.size() > 0){
-				result.add(currentCity);
-				cities.remove(currentCity);
-				double distance = Double.POSITIVE_INFINITY;
-				for (Point2D city : cities){
-					if (getDistance(currentCity, city) < distance){
-						closest = city;
-						distance = getDistance(currentCity, city);
-					}
-				}
-				currentCity = closest;
-			}	
-			return result;
-		}
-		
-		public static ArrayList<Point2D> nearestNeighbourEnhanced(ArrayList<Point2D> cities){
-			ArrayList<Point2D> result = new ArrayList<Point2D>();
-			ArrayList<ArrayList<Point2D>> sortedCitiesList = new ArrayList<ArrayList<Point2D>>();
-			ArrayList<Double> lengths = new ArrayList<Double>();
-			for (int i = 0; i < (cities.size()/10); i++){
-				ArrayList<Point2D> tempCitiesList = new ArrayList<Point2D>(cities);
-				sortedCitiesList.add(nearestNeighbourRandomStart(tempCitiesList));
-				lengths.add(routeLength(sortedCitiesList.get(i)));
-				//System.out.println("Length of route: " + lengths.get(i));
-				double distance = Double.POSITIVE_INFINITY;
-				if (lengths.get(i) < distance){
-					distance = lengths.get(i);
-					result = sortedCitiesList.get(i);
-				}
+			
+			public static double getDistance(Point2D currentCity, Point2D possible){
+				//Calculate the distance between two points
+				return Point2D.distance(currentCity.getX(), currentCity.getY(), possible.getX(), possible.getY());
 			}
-			//System.out.println(distance);
-			return result;
-		}
-		
-		public static void main(String[] args) {
-			//Loads in desired city file
-			ArrayList<Point2D> cities = LibLoader.loadTSPLib("berlin52.tsp");
-			//ArrayList<Point2D> cities = LibLoader.loadTSPLib("eil101.tsp");
-			//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u159.tsp");
-			//ArrayList<Point2D> cities = LibLoader.loadTSPLib("gil262.tsp");
-			//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d493.tsp");
-			//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u1060.tsp");
-			//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d2103.tsp");
-			//ArrayList<Point2D> cities = LibLoader.loadTSPLib("fl3795.tsp");
-			//ArrayList<Point2D> cities = LibLoader.loadTSPLib("rl5915.tsp");
 			
-			//Print the number of cities for the file
-			System.out.println("Number of cities in file: " + cities.size());
-			
-			// Start recording times
-			final long startTime = System.currentTimeMillis();
-			
-			//Choose algorithm
-			//ArrayList<Point2D> sortedCities = nearestNeighbourBasic(cities);
-			ArrayList<Point2D> sortedCities = nearestNeighbourEnhanced(cities);
-			
-			//End recording time
-			final long endTime = System.currentTimeMillis();			
-			
-			//Measure length of route found
-			double length = routeLength(sortedCities);
-			
-			//Print results
-			System.out.println("Route Length: " + length + "\nRun Time: " + (endTime - startTime) + "ms");
-			
-			//Print the number of cities for the file after the algorithm is run
-			System.out.println("Number of cities in route: " + sortedCities.size());
-		}
-	}
-\end{lstlisting}
-
-\clearpage
-\textbf{LibLoader.java}
-
-\begin{lstlisting}
-
-	import java.awt.geom.Point2D;
-	import java.io.BufferedReader;
-	import java.io.FileReader;
-	import java.io.IOException;
-	import java.util.ArrayList;
-	
-	public class LibLoader {
-		
-		public static ArrayList<Point2D> loadTSPLib(String fName){
-			//Load in a TSPLib instance. This example assumes that the Edge weight type is EUC_2D.
-			ArrayList<Point2D> result = new ArrayList<Point2D>();
-			BufferedReader br = null;
-			try {
-				String currentLine;
-				int dimension =0;//Hold the dimension of the problem
-				boolean readingNodes = false;
-				br = new BufferedReader(new FileReader(fName));
-				while ((currentLine = br.readLine()) != null) {
-					//Read the file until the end;
-					if (currentLine.contains("EOF")){
-						//EOF should be the last line
-						readingNodes = false;
-						//Finished reading nodes
-						if (result.size() != dimension){
-							//Check to see if the expected number of cities have been loaded
-							System.out.println("Error loading cities");
-							System.exit(-1);
+			public static ArrayList<Point2D> nearestNeighbourBasic(ArrayList<Point2D> cities){
+				//Nearest Neighbour Basic algorithm
+				ArrayList<Point2D> result = new ArrayList<Point2D>();
+				Point2D closest = null;
+				//Empty arraylist for results, empty point for closest city
+				Point2D currentCity = cities.get(0);
+				//Set the current city to the first city in the arraylist
+				while (cities.size() > 0){\\
+					//For all the cities, add the current city to the result and remove it from the cities list
+					result.add(currentCity);
+					cities.remove(currentCity);
+					double distance = Double.POSITIVE_INFINITY;
+					for (Point2D city : cities){
+						//Go through each city to find which is closest to the current city
+						if (getDistance(currentCity, city) < distance){
+							closest = city;
+							distance = getDistance(currentCity, city);
 						}
 					}
-					if (readingNodes){
-						//If reading in the node data
-						String[] tokens = currentLine.split(" ");
-						//Split the line by spaces.
-						//tokens[0] is the city id and not needed in this example
-						float x = Float.parseFloat(tokens[1].trim());
-						float y = Float.parseFloat(tokens[2].trim());
-						//Use Java's built in Point2D type to hold a city
-						Point2D city = new Point2D.Float(x,y);
-						//Add this city into the arraylist
-						result.add(city);
+					currentCity = closest;
+					//The closest city becomes the next current city
+				}
+				return result;
+			}
+			
+			public static ArrayList<Point2D> nearestNeighbourRandomStart(ArrayList<Point2D> cities){
+				//Nearest Neighbour Random Start algorithm
+				ArrayList<Point2D> result = new ArrayList<Point2D>();
+				Point2D closest = null;
+				Random rn = new Random();
+				int random = rn.nextInt(cities.size() + 1);
+				//Empty arraylist for results, empty point for closest city, and a random number between 0 and n (n being the number of cities in the list)
+				Point2D currentCity = cities.get(random);
+				//Set the current city to a random city in the arraylist
+				while (cities.size() > 0){
+					//For all the cities, add the current city to the result and remove it from the cities list
+					result.add(currentCity);
+					cities.remove(currentCity);
+					double distance = Double.POSITIVE_INFINITY;
+					for (Point2D city : cities){
+						//Go through each city to find which is closest to the current city
+						if (getDistance(currentCity, city) < distance){
+							closest = city;
+							distance = getDistance(currentCity, city);
+						}
 					}
-					if (currentLine.contains("DIMENSION")){
-						//Note the expected problem dimension (number of cities)
-						String[] tokens = currentLine.split(":");
-						dimension = Integer.parseInt(tokens[1].trim());
-					}
-					if (currentLine.contains("NODE_COORD_SECTION")){
-						//Node data follows this line
-						readingNodes = true;
+					currentCity = closest;
+					//The closest city becomes the next current city
+				}	
+				return result;
+			}
+			
+			public static ArrayList<Point2D> nearestNeighbourEnhanced(ArrayList<Point2D> cities){
+				//Nearest Neighbour Enhanced algorithm
+				ArrayList<Point2D> result = new ArrayList<Point2D>();
+				ArrayList<ArrayList<Point2D>> sortedCitiesList = new ArrayList<ArrayList<Point2D>>();
+				ArrayList<Double> lengths = new ArrayList<Double>();
+				//Empty arraylist for results, empty arraylist of arraylists to store the sortedCities lists, empty arraylist for the lengths
+				for (int i = 0; i < (cities.size()/10); i++){
+					//For a tenth of the total number of cities, add a NNRandomStart sorted list to the arraylist of arraylists and get its length
+					ArrayList<Point2D> tempCitiesList = new ArrayList<Point2D>(cities);
+					sortedCitiesList.add(nearestNeighbourRandomStart(tempCitiesList));
+					lengths.add(routeLength(sortedCitiesList.get(i)));
+					//System.out.println("Length of route: " + lengths.get(i));
+					double distance = Double.POSITIVE_INFINITY;
+					if (lengths.get(i) < distance){
+						//Determine the shortest length of all the routes stored in the arraylist of arraylists
+						distance = lengths.get(i);
+						result = sortedCitiesList.get(i);
 					}
 				}
-			} catch (IOException e) {
-			e.printStackTrace();
-			} finally {
-				try {
-					if (br != null)br.close();
-					} catch (IOException ex) {
-					ex.printStackTrace();
-					}
+				//System.out.println(distance);
+				return result;
 			}
-			return result;
+			
+			public static void main(String[] args) {
+				//Loads in desired city file
+				ArrayList<Point2D> cities = LibLoader.loadTSPLib("berlin52.tsp");
+				//ArrayList<Point2D> cities = LibLoader.loadTSPLib("eil101.tsp");
+				//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u159.tsp");
+				//ArrayList<Point2D> cities = LibLoader.loadTSPLib("gil262.tsp");
+				//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d493.tsp");
+				//ArrayList<Point2D> cities = LibLoader.loadTSPLib("u1060.tsp");
+				//ArrayList<Point2D> cities = LibLoader.loadTSPLib("d2103.tsp");
+				//ArrayList<Point2D> cities = LibLoader.loadTSPLib("fl3795.tsp");
+				//ArrayList<Point2D> cities = LibLoader.loadTSPLib("rl5915.tsp");
+				
+				//Print the number of cities for the file
+				System.out.println("Number of cities in file: " + cities.size());
+				
+				// Start recording times
+				final long startTime = System.currentTimeMillis();
+				
+				//Choose algorithm
+				//ArrayList<Point2D> sortedCities = nearestNeighbourBasic(cities);
+				ArrayList<Point2D> sortedCities = nearestNeighbourEnhanced(cities);
+				
+				//End recording time
+				final long endTime = System.currentTimeMillis();			
+				
+				//Measure length of route found
+				double length = routeLength(sortedCities);
+				
+				//Print results
+				System.out.println("Route Length: " + length + "\nRun Time: " + (endTime - startTime) + "ms");
+				
+				//Print the number of cities for the file after the algorithm is run
+				System.out.println("Number of cities in route: " + sortedCities.size());
+			}
 		}
-	}
-\end{lstlisting}
-
+	\end{lstlisting}
+	
+	\clearpage
+	\section{LibLoader.java}
+	\label{loadercode}
+	\begin{lstlisting}
+	
+		import java.awt.geom.Point2D;
+		import java.io.BufferedReader;
+		import java.io.FileReader;
+		import java.io.IOException;
+		import java.util.ArrayList;
+		
+		public class LibLoader {
+			
+			public static ArrayList<Point2D> loadTSPLib(String fName){
+				//Load in a TSPLib instance. This example assumes that the Edge weight type is EUC_2D.
+				ArrayList<Point2D> result = new ArrayList<Point2D>();
+				BufferedReader br = null;
+				try {
+					String currentLine;
+					int dimension =0;//Hold the dimension of the problem
+					boolean readingNodes = false;
+					br = new BufferedReader(new FileReader(fName));
+					while ((currentLine = br.readLine()) != null) {
+						//Read the file until the end;
+						if (currentLine.contains("EOF")){
+							//EOF should be the last line
+							readingNodes = false;
+							//Finished reading nodes
+							if (result.size() != dimension){
+								//Check to see if the expected number of cities have been loaded
+								System.out.println("Error loading cities");
+								System.exit(-1);
+							}
+						}
+						if (readingNodes){
+							//If reading in the node data
+							String[] tokens = currentLine.split(" ");
+							//Split the line by spaces.
+							float x = Float.parseFloat(tokens[1].trim());
+							float y = Float.parseFloat(tokens[2].trim());
+							Point2D city = new Point2D.Float(x,y);
+							//Add this city into the arraylist
+							result.add(city);
+						}
+						if (currentLine.contains("DIMENSION")){
+							//Check the problem dimension (number of cities)
+							String[] tokens = currentLine.split(":");
+							dimension = Integer.parseInt(tokens[1].trim());
+						}
+						if (currentLine.contains("NODE_COORD_SECTION")){
+							//Node data follows this line
+							readingNodes = true;
+						}
+					}
+				} catch (IOException e) {
+				e.printStackTrace();
+				} finally {
+					try {
+						if (br != null)br.close();
+						} catch (IOException ex) {
+						ex.printStackTrace();
+						}
+				}
+				return result;
+			}
+		}
+	\end{lstlisting}
+\end{appendices}
 
 \end{document}
 
